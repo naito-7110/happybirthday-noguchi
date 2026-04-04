@@ -1,0 +1,16 @@
+{
+  "name": "happybirthday-noguchi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsdown"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+    "tsdown": "^0.21.6"
+  }
+}
