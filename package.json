@@ -1,12 +1,24 @@
 {
   "name": "happybirthday-noguchi",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
-  "scripts": {
-    "build": "tsdown"
+  "description": "A console birthday card for Noguchi",
+  "type": "module",
+  "bin": {
+    "happybirthday-noguchi": "./dist/index.mjs"
   },
-  "keywords": [],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "start": "node dist/index.mjs",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [
+    "birthday",
+    "cli",
+    "console"
+  ],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.33.0",
