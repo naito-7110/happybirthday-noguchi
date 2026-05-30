@@ -17,6 +17,7 @@
         packages = with pkgs; [
           nodejs_25
           pnpm
+          gh
           typescript-language-server
           vscode-langservers-extracted
         ];
