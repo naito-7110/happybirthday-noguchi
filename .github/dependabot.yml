@@ -1,17 +1,21 @@
+# Dependabot is allowed to open update PRs, but only for releases that
+# are at least 7 days old. This buys a quarantine window so that any
+# upstream supply-chain attack (compromised maintainer keys, malicious
+# transitive deps) has time to be discovered and reported before it
+# can land in this repo through an auto-bump PR.
+
 version: 2
 updates:
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
       interval: weekly
-    groups:
-      actions:
-        patterns: ["*"]
+    cooldown:
+      default-days: 7
 
   - package-ecosystem: npm
     directory: "/"
     schedule:
       interval: weekly
-    groups:
-      npm:
-        patterns: ["*"]
+    cooldown:
+      default-days: 7
