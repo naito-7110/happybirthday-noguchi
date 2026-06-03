@@ -12,7 +12,8 @@
   "scripts": {
     "build": "tsdown",
     "start": "node dist/index.mjs",
-    "prepublishOnly": "pnpm build"
+    "typecheck": "tsc",
+    "prepublishOnly": "pnpm typecheck && pnpm build"
   },
   "keywords": [
     "birthday",
@@ -23,6 +24,8 @@
   "license": "ISC",
   "packageManager": "pnpm@10.33.0",
   "devDependencies": {
-    "tsdown": "^0.21.6"
+    "@types/node": "^25.9.1",
+    "tsdown": "^0.21.6",
+    "typescript": "^6.0.3"
   }
 }
