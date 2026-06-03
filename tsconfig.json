@@ -3,14 +3,18 @@
     "target": "ES2020",
     "module": "ES2020",
     "lib": [
-      "DOM",
       "ES2020"
+    ],
+    "types": [
+      "node"
     ],
     "strict": true,
     "paths": {},
     "moduleResolution": "Bundler",
     "allowJs": false,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "noEmit": true,
+    "skipLibCheck": true
   },
   "include": [
     "src/**/*.ts"
