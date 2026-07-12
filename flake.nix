@@ -1,5 +1,5 @@
 {
-  description = "Node 25 devShell";
+  description = "Node 24 devShell";
 
   inputs.nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
 
@@ -15,7 +15,7 @@
     devShells = forAllSystems (pkgs: {
       default = pkgs.mkShell {
         packages = with pkgs; [
-          nodejs_25
+          nodejs_24
           pnpm
           gh
           typescript-language-server
