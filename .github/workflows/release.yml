@@ -45,7 +45,7 @@ jobs:
           npx https://github.com/${REPO}/releases/latest/download/happybirthday-noguchi.tgz
           \`\`\`
           EOF
-          nix develop --command gh release create "$TAG" \
+          gh release create "$TAG" \
             happybirthday-noguchi.tgz \
             --title "$TAG" \
             --notes-file release-notes.md \
